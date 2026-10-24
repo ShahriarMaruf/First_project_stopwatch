@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stopwatch-card">
+    <h1>Stopwatch</h1>
+    
+    <!-- Time Display -->
+    <div class="time-display" id="display">
+      <span id="mins">00</span>:<span id="secs">00</span>.<span id="ms" class="milliseconds">00</span>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="controls">
+      <button class="btn btn-start" id="startBtn">Start</button>
+      <button class="btn btn-lap" id="lapBtn" disabled>Lap</button>
+      <button class="btn btn-reset" id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <!-- Lap Times -->
+    <div class="laps-container">
+      <ul class="laps-list" id="lapsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
